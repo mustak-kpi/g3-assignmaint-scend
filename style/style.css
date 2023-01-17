@@ -69,9 +69,7 @@ margin: 0 auto;
     margin-bottom: 30px;
     margin-top: 30px;
 }
-.benner-img{
-    margin: 50px 200px;
-/* background: url(group-three-modern-architects.jpg);  */
+.banner img{
 border-radius: 8px;
 }
 /* ======================================
@@ -265,22 +263,32 @@ font-size: 20px;
     .container{
        width: 100%;
     }
-    .header-section, .header-ditle, .exprience-itme, .main-title, .status-box, .fotter-part, .footer-main, .title-cont{
-        grid-template-columns: repeat(1, 1fr);
+    .header{
+        grid-template-columns: repeat(1,1fr);
     }
-    .benner-img,  .status-box,.footer-main, .section-title{
-        flex-direction: column;
-    } 
-    .box-item{
-        flex-direction: column;
+    .header-itme{
+        font-size: 25px;
     }
+    .header-section ul li{
+      padding-left: 15px;
+      font-size: 10px;
+    }
+    .header-title{
+        width: 400px;
+    }
+    .banner img {
+        width: 380px;
+    }
+    .section-title{
+        flex-direction: column;
+         grid-template-columns: repeat(1,1fr);
+    }
+.section-banner{
+     grid-template-columns: repeat(1,1fr);
+}
+ .exprience-itme, .status-box, .footer-main, .title-cont, .fotter-part, .main-title{
+    display: none;
+}
+    
  }
 
- @media screen and (min-width: 577px) and (max-width: 992px) {
-    .container{
-        width: 100%;
-    }
-    .header-section, .header-ditle, .exprience-itme, .main-title, .status-box, .fotter-part, .footer-main, .title-cont{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
